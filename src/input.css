@@ -1,0 +1,86 @@
+/* ooh baby */
+@import url('https://fonts.googleapis.com/css2?family=Gotu&family=Montserrat:wght@400;700&family=Oooh+Baby&family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* font-family: 'Oooh Baby', cursive; */
+
+
+/* Roboto mono */
+@import url('https://fonts.googleapis.com/css2?family=Gotu&family=Montserrat:wght@400;700&family=Poppins:wght@400;500;600;700;800;900&family=Roboto+Mono:wght@400;500&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* font-family: 'Roboto Mono', monospace; */
+
+/* Monserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+
+/* playfair display */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+/* font-family: 'Playfair Display', serif; */
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .webkit-scroll-none::-webkit-scrollbar {
+        display: none;
+    }
+}
+@layer components {
+    .container_ {
+        @apply max-w-[88%] mx-auto px-4;
+    }
+    /* vektor */
+    .saturnus {
+        @apply absolute top-32 left-20 -z-50 bg-vector-visible;
+    }
+    .jupiter {
+        @apply absolute top-[30rem] left-0 -z-10 bg-vector-visible;
+    }
+    .airplane {
+        @apply absolute top-32 right-52 -z-10 bg-vector-visible;
+    }
+    .radar {
+        @apply absolute top-[28rem] right-80 -z-10 bg-vector-visible;
+    }
+    .earth {
+        @apply absolute top-[50rem] right-80 -z-10 bg-vector-visible animate-spin;
+    }
+    .star-1 {
+        @apply absolute top-[70rem] left-32 -z-10 bg-vector-visible;
+    }
+    .teleskop {
+        @apply absolute bottom-60 right-48 -z-10 bg-vector-visible;
+    }
+    .sinus {
+        @apply lg:flex items-center gap-x-4 absolute bottom-[70rem] right-28 -z-10 hidden;
+    }
+    .bg-vector-visible {
+        @apply hidden lg:block;
+    }
+    /* end vector */
+    /* header */
+    .header {
+        @apply text-center py-4 mb-28 md:mb-32;
+    }
+    /* article */
+    .article-container {
+        @apply grid grid-cols-1 gap-y-4;
+    }
+    .article-text {
+        @apply text-xl md:text-[28px] max-w-full md:max-w-4xl;
+    }
+    .article-title {
+        @apply text-[28px] md:mx-2 font-medium md:font-normal;
+    }
+    /* section */
+    .section-container {
+        @apply mb-20 md:mb-44;
+    }
+    .image-container {
+        @apply w-full flex justify-center my-24;
+    }
+    /* footer */
+    .footer {
+        @apply w-full py-8 text-center font-Playfair;
+    }
+}
